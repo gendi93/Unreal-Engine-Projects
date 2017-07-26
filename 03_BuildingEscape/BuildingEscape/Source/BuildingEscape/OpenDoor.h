@@ -43,17 +43,13 @@ private:
 	UPROPERTY(EditAnywhere)
 	bool DoorOpen;
 
-	float LastDoorOpenTime;
-	float DoorCloseTime;
-
-	// Pressure plate trigger
 	UPROPERTY(EditAnywhere)
-	ATriggerVolume* PressurePlate;
+	ATriggerVolume* PressurePlate = nullptr;
 
-	// Object to be detected by pressure plate
-	AActor* ActorThatOpens;
-	// The owning door
-	AActor* Owner;
-		
+	AActor* Owner = nullptr; // The owning door
+	
+	// Returns total mass in kg
+	float GetTotalMassOfActorsOnPlate();
+	float LastDoorOpenTime;
 	
 };

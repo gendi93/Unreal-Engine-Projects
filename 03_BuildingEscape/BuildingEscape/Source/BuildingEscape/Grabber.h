@@ -41,4 +41,6 @@ private:
 	void SetupInputComponent();
 	// Return hit for first physics body in reach
 	const FHitResult GetFirstPhysicsBodyInReach();
+	// Return current start and end of reach line
+	TArray<FVector> GetView();
 };
