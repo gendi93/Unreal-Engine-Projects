@@ -6,18 +6,16 @@
 **/DerivedDataCache
 **/Intermediate
 **/Saved
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Architecture
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Audio
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Blueprints
-03_BuildingEscape/BuildingEscape/Content/StarterContent/HDRI
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Maps
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Particles
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Shapes
-03_BuildingEscape/BuildingEscape/Content/StarterContent/Textures
+
+**/StarterContent/*
+!**/StarterContent/Props/
+**/StarterContent/Props/*
+!**/StarterContent/Props/SM_Door.uasset
+
 
 
 ######################
 # VS Generated Files #
 ######################
-**.VC.db
-**.suo
+**/.vs
+**.sln
